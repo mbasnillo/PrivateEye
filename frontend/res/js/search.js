@@ -22,7 +22,7 @@ $(document).ready(function(){
       dataType: 'json',
       success: search_success,
       error: function(err){
-          console.log("SEARCH ERROR");
+          return alertify.notify(err.responseText, 'custom', 2, function(){ });
       }
     });
 
