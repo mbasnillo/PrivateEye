@@ -15,5 +15,6 @@ body,  html, #wrapper {
 }
 
 #search_bar{
-  width: 50%;
+  min-width: 25%;
+  max-width: 30%;
 }
