@@ -4,17 +4,58 @@ body,  html, #wrapper {
   overflow: hidden;
 }
 
-#wrapper {
-  display: table;
+.white-text {
+	color: #FFF;
 }
 
-#search {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+.shadow1 {
+  text-shadow: 3px 3px 3px #000;
+}
+
+.shadow2 {
+  text-shadow: 2px 2px 1px #000;
+}
+
+.brown-btn, .brown-btn:focus  {
+  background-color: #4E342E;
+  font-size: 16px;
+  box-shadow: 3px 3px 2px #000;
+}
+
+.brown-btn:hover{
+  background-color: #3E2723;
 }
 
 #search_bar{
   min-width: 25%;
   max-width: 30%;
+  box-shadow: 3px 3px 2px #000;
+}
+
+#header {
+  background: linear-gradient(to right, #616161, #212121);
+  position: absolute;
+  z-index: 0;
+  float: left;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-top:10px;
+}
+
+#header .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../img/office.jpg');
+  /* Background from https://s-media-cache-ak0.pinimg.com/originals/a1/3d/7f/a13d7f2185a9c0e5e8306c385119b8ad.jpg */
+  /* https://cdnb.artstation.com/p/assets/images/images/001/300/981/large/anton-freixas-detectiveoffice-hd.jpg?1443967297 */
+  background-size: cover;
+  background-position: 100% 50%;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
 }

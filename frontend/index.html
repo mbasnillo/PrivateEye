@@ -4,26 +4,33 @@
     <meta charset="utf-8">
     <title>Private Eye - CMSC 191's Best Search Engine</title>
 
-    <link rel="stylesheet" type="text/css" href="res/css/index.css">
   	<link rel="stylesheet" type="text/css" href="res/css/foundation.min.css">
   	<link rel="stylesheet" type="text/css" href="res/css/foundation-icons.css">
     <link rel="stylesheet" type="text/css" href="res/css/alertify.min.css">
+    <link rel="stylesheet" type="text/css" href="res/css/index.css">
+  	<link rel="stylesheet" type="text/css" href="../res/css/fonts.css">
 
     <script type="text/javascript" src="res/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="res/js/alertify.min.js"></script>
   </head>
   <body>
-    <div id="wrapper">
-      <div id="search">
-        <h1>Private Eye</h1>
-        <p>
-            <div align="center">
-              <input type="text" name="search" id="search_bar"/>
-            </div>
-        </p>
-          <button type="button" class="button" id="btn_search" style="width:15%;">Search <i class="fi-magnifying-glass icon" id="icon"></i></button>
-      </div>
-    </div>
+    <div class="expanded row" id="header" align="center">
+  		<div class="bg"></div>
+  		<div class="expanded row white-text">
+  			<div class="large-12 columns shadow1" align="center">
+  				<h1 class="myriad-bold shadow1" id="top_title"><i class="fi-magnifying-glass icon" id="icon"></i>rivate Eye</h1>
+          <input type="text" name="search" id="search_bar"/>
+          <p>
+              <div align="center">
+
+              </div>
+          </p>
+
+  				<p>
+  					<button type="button" class="button brown-btn myriad shadow1" id="btn_search" style="width:15%;">Search</button>
+  				</p>
+  			</div>
+  		</div>
 
     <script type="text/javascript" src="res/js/search.js"></script>
   </body>

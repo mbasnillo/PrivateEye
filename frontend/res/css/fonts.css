@@ -1,0 +1,65 @@
+@font-face{
+	font-family: prociono;
+	src: url('fonts/Prociono-Regular.otf');
+}
+
+.prociono{
+	font-family: prociono;
+	font-size: 20px;
+}
+
+@font-face{
+	font-family: codebold;
+	src: url(fonts/codebold.otf);
+}
+
+.codebold{
+	font-family: codebold;
+	font-size:20px;
+}
+
+@font-face{
+	font-family: codelight;
+	src: url(fonts/codelight.otf);
+}
+
+.codebold{
+	font-family: codelight;
+	font-size:20px;
+}
+
+@font-face {
+  font-family: myriad-bold;
+  src: url('fonts/MYRIADPRO-BOLD.OTF');
+}
+
+.myriad-bold {
+  font-family: myriad-bold;
+}
+
+@font-face {
+  font-family: myriad;
+  src: url('fonts/MYRIADPRO-REGULAR.OTF');
+}
+
+.myriad {
+  font-family: myriad;
+}
+
+@font-face {
+  font-family: myriad-semibold;
+  src: url('fonts/MYRIADPRO-SEMIBOLD.OTF');
+}
+
+.myriad-semibold {
+  font-family: myriad-semibold;
+}
+
+@font-face {
+  font-family: myriad-semibold-it;
+  src: url('fonts/MYRIADPRO-SEMIBOLDIT.OTF');
+}
+
+.myriad-semibold-it {
+  font-family: myriad-semibold-it;
+}
