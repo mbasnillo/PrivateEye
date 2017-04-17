@@ -1,6 +1,7 @@
 'use strict';
 
 $(document).ready(function(){
+  $('#res').hide();
   $(document).keypress(function(event){
       if(event.keyCode == 13){
           $('#btn_search').click();
@@ -21,18 +22,19 @@ $(document).ready(function(){
       dataType: 'json',
       success: search_success,
       error: function(err){
-          return alertify.notify(err.responseText, 'custom', 2, function(){ });
+        $("#result_name").empty();
+        return alertify.notify(err.responseText, 'custom', 2, function(){ });
       }
     });
 
   }
 
   function search_success(data){
+    var arr = [];
+    $('#res').show();
     $("#result_name").empty();
-    console.log(data.length);
-    for(var i=0; i<=data.length; i++){
-      console.log(data[i].score);
-      $("#result_name").append("<p> <b>" + (i+1) + ".</b> " + data[i].post + "</p>");
+    for(var i=0; i<=data.length-1; i++){
+      $("#result_name").append("<p> <b>" + (i+1) + ".</b> " + data[i].post + "</p> <hr />");
     }
   }
 
@@ -40,5 +42,6 @@ $(document).ready(function(){
 
   function clear(){
     $("#result_name").empty();
+    $('#res').hide();
   }
 });
