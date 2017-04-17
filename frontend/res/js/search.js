@@ -1,7 +1,6 @@
 'use strict';
 
 $(document).ready(function(){
-
   $(document).keypress(function(event){
       if(event.keyCode == 13){
           $('#btn_search').click();
@@ -29,6 +28,17 @@ $(document).ready(function(){
   }
 
   function search_success(data){
-    console.log(data[0]);
+    $("#result_name").empty();
+    console.log(data.length);
+    for(var i=0; i<=data.length; i++){
+      console.log(data[i].score);
+      $("#result_name").append("<p> <b>" + (i+1) + ".</b> " + data[i].post + "</p>");
+    }
+  }
+
+  $('#btn_clear').click(clear);
+
+  function clear(){
+    $("#result_name").empty();
   }
 });

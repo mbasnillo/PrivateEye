@@ -1,7 +1,6 @@
 body,  html, #wrapper {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .white-text {
@@ -34,7 +33,7 @@ body,  html, #wrapper {
 
 #header {
   background: linear-gradient(to right, #616161, #212121);
-  position: absolute;
+  position: relative;
   z-index: 0;
   float: left;
   width: 100%;
@@ -44,7 +43,7 @@ body,  html, #wrapper {
 }
 
 #header .bg {
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   bottom: 0;
@@ -54,8 +53,12 @@ body,  html, #wrapper {
   /* Background from https://s-media-cache-ak0.pinimg.com/originals/a1/3d/7f/a13d7f2185a9c0e5e8306c385119b8ad.jpg */
   /* https://cdnb.artstation.com/p/assets/images/images/001/300/981/large/anton-freixas-detectiveoffice-hd.jpg?1443967297 */
   background-size: cover;
-  background-position: 100% 50%;
+  background-repeat: no-repeat;
   opacity: .5;
   width: 100%;
   height: 100%;
+}
+
+#result_name {
+  font-size: 20px;
 }
